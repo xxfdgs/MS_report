@@ -125,8 +125,6 @@ def solve_molecular_formula(spectrum,dir,topk):
     candidate_list = list()
     candidate = np.zeros(dir.number)
     
-    molecular_mass=185.1183
-    
     formula_decomposition(molecular_mass,molecular_mass,dir,candidate_list,args.error,index=dir.number-1,candidate=candidate)
 #    for i in range(len(candidate_list)):
 #        logging.info(candidate_list[i])
